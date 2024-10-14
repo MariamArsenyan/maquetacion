@@ -27,11 +27,30 @@ body {
     justify-content: space-between;
     background: linear-gradient(135deg, #a2c0cc, #fceea7);
     align-items: center;
+    transition: all 0.3s ease;
+}
+*.header div:hover {
+    animation: changeSizeAndColorHeader 1s forwards;
+}
+
+@keyframes changeSizeAndColorHeader {
+    0% {
+        background: linear-gradient(135deg, #ff5f6d, #ffc371);
+        transform: scale(1);
+    }
+    50% {
+        background: linear-gradient(135deg, #e74250, #eea238);
+        transform: scale(1.1); 
+    }
+    100% {
+        background: linear-gradient(135deg, #ee3746, #f8a735);
+        transform: scale(1.2); 
+    }
 }
 
 .logo, .social {
     width: 15%;
-    background: linear-gradient(135deg, #f6d365, #fda085);
+    background: linear-gradient(135deg, #f6d365, #fda085); 
     padding: 10px;
     margin: 30px;
     transition: all 0.3s ease;
