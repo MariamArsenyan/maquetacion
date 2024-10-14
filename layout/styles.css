@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: hsl(0, 0%, 96%);
+    background-color: #f4f4f4;
     color: black;
     text-align: left;
 }
@@ -17,35 +17,36 @@ body {
 }
 
 .content {
-    background-color: black;
+    
+    background: linear-gradient(135deg, #e3a6ae, #c9c8e1);
     padding: 20px;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
-    background-color: grey;
+    background: linear-gradient(135deg, #a2c0cc, #fceea7);
     align-items: center;
 }
 
 .logo, .social {
     width: 15%;
-    background-color: darkred;
-    padding: 10px;
-    margin: 30px;
-    transition: all 0.3s ease;
-}
-.nav{
-    width: 60%;
-    background-color: darkred;
+    background: linear-gradient(135deg, #f6d365, #fda085);
     padding: 10px;
     margin: 30px;
     transition: all 0.3s ease;
 }
 
+.nav {
+    width: 60%;
+    background: linear-gradient(135deg, #f6d365, #fda085);
+    padding: 10px;
+    margin: 30px;
+    transition: all 0.3s ease;
+}
 
 .banner {
-    background-color: orange;
+    background: linear-gradient(135deg, #d1fbd0, #fbd1b7);
     padding: 20px;
     margin-top: 20px;
 }
@@ -53,7 +54,7 @@ body {
 .main-content {
     display: flex;
     justify-content: space-between;
-    background-color: black;
+    background: linear-gradient(135deg, #e3a6ae, #c9c8e1);
     margin: 20px 0;
     padding: 20px;
 }
@@ -63,12 +64,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: grey;
+    background: linear-gradient(135deg, #f8a5c2, #fbbc8a);
     padding: 20px;
 }
 
 .article {
-    background-color: blue;
+    background: linear-gradient(135deg, #fddb92, #d1fdff);
     width: 48%;
     padding: 20px;
     margin-bottom: 10px;
@@ -83,19 +84,19 @@ body {
 
 .sidebar {
     width: 20%;
-    background-color: red;
+    background: linear-gradient(135deg, #ffb6d1, #2470a0);
     padding: 20px;
 }
 
 .publicidad {
-    background-color: yellow;
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
     padding: 20px;
     margin-bottom: 10px;
 }
 
 .footer {
-    background-color: black;
-    padding: 14px;
+    background: linear-gradient(135deg, #e3a6ae, #c9c8e1);
+    padding: 16px;
     margin-top: 20px;
 }
 
@@ -103,3 +104,52 @@ body {
     background-color: lightyellow;
     padding: 10px;
 }
+
+@media (max-width: 768px) {
+    body {
+        background-color: rgb(107, 236, 208);
+    }
+    .header {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .logo, .social {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .nav {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .main-content {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .articles {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .article {
+        width: 48%; 
+        margin-bottom: 20px;
+    }
+
+    .sidebar {
+        width: 100%; 
+        margin-bottom: 20px;
+    }
+
+    .navegacion {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
